@@ -1,0 +1,12 @@
+#title {
+    color: #fff !important;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+  }
+  .nav-item .nav-link {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
