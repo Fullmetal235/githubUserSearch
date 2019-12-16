@@ -1,12 +1,23 @@
 #title {
-    color: #fff !important;
+    color: black !important;
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
+	float: left;
   }
-  .nav-item .nav-link {
-    color: #fff;
+  .nav-item {
+    color: black;
     font-size: 1.3rem;
-    margin-left: 1rem;
+	  display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+    position: relative;
   }
+
+.nav-link{
+	
+}
+.ul {
+	margin-left: auto!important;
+}

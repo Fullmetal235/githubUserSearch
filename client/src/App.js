@@ -2,15 +2,15 @@ import React, { useState, useEffect, Fragment } from "react";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import axios from "axios";
 import "./App.css";
-import Navbar from "./components/navBar/navbar";
-import Users from "./components/users/users";
-import SearchForm from "./components/search/search";
-import Alert from "./components/alert/alert";
-import User from "./components/users/user";
-import Home from "./components/pages/home";
-import About from "./components/pages/about";
-import Contact from "./components/pages/contact";
-import NotFound from "./components/pages/notFound";
+import Navbar from "./components/navBar/navbar.js";
+import Users from "./components/users/users.js";
+import SearchForm from "./components/search/search.js";
+import Alert from "./components/alert/alert.js";
+import User from "./components/users/user.js";
+//import Home from "./components/pages/home.js";
+import About from "./components/pages/about.js";
+import Contact from "./components/pages/contact.js";
+//import NotFound from "./components/pages/notFound.js";
 
 function App() {
   let githubClientId;

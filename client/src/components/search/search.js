@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import './search.css';
 const SearchForm = props => {
   const [state, setState] = useState("");
   const handleStateChange = evt => setState(evt.target.value);
@@ -21,7 +21,7 @@ const SearchForm = props => {
           <div className='col-7'>
             <input
               type='text'
-              className='form-control border-primary'
+              className='input'
               placeholder='Search Users...'
               value={state}
               onChange={handleStateChange}
@@ -30,7 +30,7 @@ const SearchForm = props => {
           <div className='col-auto'>
             <input
               type='submit'
-              className='form-control border-success'
+              className='search-btn'
               value='Search'
             />
           </div>
@@ -39,7 +39,7 @@ const SearchForm = props => {
       {props.showClear && (
         <button
           type='button'
-          className='btn btn-outline-dark btn-sm btn-block mt-2'
+          className='btn'
           onClick={props.clearUsers}
           style={{ letterSpacing: ".2rem" }}
         >

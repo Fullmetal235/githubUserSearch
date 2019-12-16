@@ -1,7 +1,9 @@
 import React, { useEffect, Fragment } from "react";
+//import { Card, Image } from 'semantic-ui-react';
 import Loading from "./../loading/loading";
 import { Link } from 'react-router-dom';
 import Repos from './../repos/repos';
+import './user.css';
 
 const User = props => {
   useEffect(() => {
@@ -36,7 +38,7 @@ const User = props => {
         <i className="fas fa-long-arrow-alt-left" style={{fontSize: "1.3rem", color: "white", textAlign:"center", marginRight: "1rem"}}/>
         Back to Search
       </Link>
-      <Fragment>
+     {/* <Fragment>
       <span className="text-center" style={{marginLeft: "2rem", fontSize: "2rem"}}>
       Hireable: {""}
         {hireable ? (
@@ -45,16 +47,20 @@ const User = props => {
           <i className="fas fa-times-circle text-danger" />
         )}
       </span>
-        </Fragment>
+        </Fragment>*/}
+		  
       </div>
-      <div className="container mt-4 border border-light rounded-left shadow p-5">
+		  
+      <div className="container">
         <div className="row">
           <div className="col mt-5">
-            <div className="card text-center shadow" style={{width: "80%"}}>
+            <div className="card" style={{width: "80%"}}>
+				
               <img src={avatar_url} className="card-img-top" alt={login}/>
               <div className="card-body">
                 <h3 className="card-title text-success">{name}</h3>
                 <h5 className="card-text"><strong>Location</strong>: {location}</h5>
+				  
               </div>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
@@ -80,6 +86,7 @@ const User = props => {
               </ul>
             </div>
           </div>
+			
           <div className="col">
           <div>
             {bio && (
@@ -126,7 +133,7 @@ const User = props => {
             </ul>
             </div>
           </div>
-          <h2 className="text-left text-danger">RESENT REPOS</h2>
+          <h2 className="text-left text-danger">Recent repos</h2>
           <Repos repos={repos} />
           </div>
         </div>

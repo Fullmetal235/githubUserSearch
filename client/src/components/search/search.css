@@ -1,0 +1,17 @@
+.btn{
+	background-color: purple;
+	border-color:purple;
+	color: white;
+	
+}
+.input{
+	border-radius: 50px;
+	width:200px;
+}
+.search-btn{
+	
+	background-color: purple;
+	border-color:purple;
+	color: white;
+	display: flex;
+}

@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
@@ -8,9 +9,9 @@ return (
     <header style={{marginBottom: "6rem"}}>
       <nav className='navbar navbar-expand-lg fixed-top navbar-dark bg-info static-top'>
         <Link className='navbar-brand text-dark' to='/' id='title'>
-          <i className='fab fa-github-square' /> {title}
+          <i src ='GitHub-Mark.ai' className='fab fa-github-square' /> {title}
         </Link>
-        <button
+       {/* <button
           className='navbar-toggler'
           type='button'
           data-toggle='collapse'
@@ -20,9 +21,9 @@ return (
           aria-label='Toggle navigation'
         >
           <span className='navbar-toggler-icon'></span>
-        </button>
+        </button>*/}
         <div className='collapse navbar-collapse' id='navbarResponsive'>
-          <ul className='navbar-nav ml-auto'>
+          <ul className='ul'>
             <li className='nav-item active'>
               <Link className='nav-link' to='/'>
                 Home
