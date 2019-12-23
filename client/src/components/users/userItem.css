@@ -3,13 +3,21 @@
 	border-color:purple;
 	color: white;
 	border: 2px;
+	display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .card{
-	margin-bottom: 1.5rem!important;
 	position: relative;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
@@ -17,4 +25,34 @@
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
+	box-sizing: border-box;
+}
+
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.card-title {
+	margin-bottom: .75rem;
+	font-size: 20px;
+	font-weight: 500;
+    line-height: 1.2;
+	margin-top: 0;
+}
+
+.col {
+	flex-basis: 0;
+	max-width: 100%;
 }

@@ -30,7 +30,7 @@ const SearchForm = props => {
           <div className='col-auto'>
             <input
               type='submit'
-              className='search-btn'
+              className='btn'
               value='Search'
             />
           </div>
